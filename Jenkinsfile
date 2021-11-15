@@ -18,5 +18,15 @@ pipeline {
 			}
 		}
 
+	stage('docker')
+		{
+		  steps{
+		    script{
+		      sh "ansible-playbook livraisonContinue1/ansible/docker.yml -i livraisonContinue1/ansible/inventory/host.yml"
+		    }
+		  }
+		}
+
+
 	}
 }
