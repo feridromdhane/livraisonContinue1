@@ -9,13 +9,13 @@ pipeline {
 			}
 		}
 
-		stage('docker')
+	stage('Build')
 		{
-		  steps{
-		    script{
-		      sh "ansible-playbook livraisonContinue/ansible/docker.yml -i livraisonContinue/ansible/inventory/host.yml"
-		    }
-		  }
+			steps{
+				script{
+					sh "ansible-playbook livraisonContinue/ansible/build.yml -i livraisonContinue/ansible/inventory/host.yml"
+				}
+			}
 		}
 
 	}
