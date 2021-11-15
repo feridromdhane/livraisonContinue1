@@ -4,7 +4,7 @@
   docker_image:
     name: devops
     build:
-      path: /var/lib/jenkins/workspace/MyFirstAngular-pipeline/MyFirstAngular
+      path: /var/lib/jenkins/workspace/livraisonContinue/livraisonContinue1
       pull: no
     source: build
     state: present
