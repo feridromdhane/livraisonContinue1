@@ -22,7 +22,7 @@ pipeline {
 		{
 		  steps{
 		    script{
-		      sh "ansible-playbook livraisonContinue1/ansible/docker.yml -i livraisonContinue1/ansible/inventory/host.yml"
+		      sh "ansible-playbook livraisonContinue1/Ansible/docker.yml -i livraisonContinue1/Ansible/inventory/host.yml"
 		    }
 		  }
 		}
