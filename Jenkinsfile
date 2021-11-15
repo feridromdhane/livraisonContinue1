@@ -13,7 +13,7 @@ pipeline {
 		{
 			steps{
 				script{
-					sh "ansible-playbook livraisonContinue/Ansible/build.yml -i livraisonContinue/Ansible/inventory/host.yml"
+					sh "ansible-playbook livraisonContinue1/Ansible/build.yml -i livraisonContinue1/Ansible/inventory/host.yml"
 				}
 			}
 		}
